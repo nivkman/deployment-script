@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo "running apt update"
-sudo apt update
+sudo apt-get update
 
 echo "running apt upgrade"
-sudo apt upgrage -y
+sudo apt-get upgrade -y
 
 echo "installing docker"
 sudo apt install docker.io
