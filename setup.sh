@@ -7,7 +7,7 @@ echo "running apt upgrade"
 sudo apt-get upgrade -y
 
 echo "installing docker"
-sudo apt install docker.io
+sudo apt install docker.io -y
 
 echo "installing docker-compose"
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
