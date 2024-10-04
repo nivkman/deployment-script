@@ -1,11 +1,11 @@
-version: "3.3"
+version: '3.8'
 services:
   artifactory-service:
     image: docker.bintray.io/jfrog/artifactory-oss:7.49.6
     container_name: artifactory
     restart: always
     networks:
-      - ci_net
+      - ci_network
     ports:
       - 8081:8081
       - 8082:8082
@@ -17,4 +17,4 @@ volumes:
 
 networks:
   ci_network:
-  
+    external: true
